@@ -1,0 +1,11 @@
+/* Basic styles to confirm the project is working */
+body {
+  background-color: #111;
+  color: #eee;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}

@@ -1,8 +1,3 @@
-<changes>
-  <change>
-    <file>src/index.tsx</file>
-    <description>Replaced the incorrect XML content with the proper TypeScript code to initialize and render the React application. Added the missing CSS import.</description>
-    <content><![CDATA[
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
@@ -17,6 +12,3 @@ root.render(
     <App />
   </React.StrictMode>
 );
-]]></content>
-  </change>
-</changes>

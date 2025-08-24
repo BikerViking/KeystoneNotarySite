@@ -1,8 +1,3 @@
-<changes>
-  <change>
-    <file>tsconfig.json</file>
-    <description>Corrected the 'paths' alias to properly resolve modules starting with '@/' to the 'src' directory, enabling clean imports.</description>
-    <content><![CDATA[
 {
   "compilerOptions": {
     "target": "ESNext",
@@ -27,6 +22,3 @@
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
-]]></content>
-  </change>
-</changes>

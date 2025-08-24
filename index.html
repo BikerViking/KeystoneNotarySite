@@ -1,8 +1,3 @@
-<changes>
-  <change>
-    <file>index.html</file>
-    <description>Removed conflicting script tags and the importmap. The file now correctly points to the single '/src/index.tsx' entry point as required by Vite.</description>
-    <content><![CDATA[
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +10,12 @@
 <script type="importmap">
 {
   "imports": {
-    "react/": "https://esm.sh/react@^19.1.1/"
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "vite": "https://esm.sh/vite@^7.1.3",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.0.1",
+    "path": "https://esm.sh/path@^0.12.7",
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/"
   }
 }
 </script>
@@ -26,6 +26,3 @@
     <script type="module" src="/src/index.tsx"></script>
 </body>
 </html>
-]]></content>
-  </change>
-</changes>
