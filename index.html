@@ -1,3 +1,8 @@
+<changes>
+  <change>
+    <file>index.html</file>
+    <description>Removed conflicting script tags and the importmap. The file now correctly points to the single '/src/index.tsx' entry point as required by Vite.</description>
+    <content><![CDATA[
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,14 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
-    <script type="module" src="/src/index.tsx" defer></script>
 <script type="importmap">
 {
   "imports": {
-    "react": "https://esm.sh/react@^19.1.1",
-    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
     "react/": "https://esm.sh/react@^19.1.1/"
   }
 }
@@ -23,5 +23,9 @@
 <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script>
 </body>
 </html>
+]]></content>
+  </change>
+</changes>
